@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otters of North America</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
 <main>
 <h1>Otters of North America</h1>
 
-<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+<p> Otters have long been known for their playful nature and adorable habits, making them a favorite among members of the animal kingdom. But otters are still wild animals with distinct characteristics and methods of survival. While most people are generally aware that otters can exist both in freshwater and marine habitats, they may not know that there are actually <i>13 distinct species of otters</i>. Otters are found all over the world, including in North America, Europe, Asia, South America, and parts of North Africa. Otters are a subfamily of Mustelidae, which means they are most closely related to animals like wolverines, badgers, and weasels.</p>
 
 <ul>
     <li class="mainimage"><img src="https://www.masslive.com/resizer/LPyU4yw5XvJAGj1Q6XdT8VdKs2A=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/5HPX3OOISVEYVHAITKDJOOAVGU.jpg" height="180" alt="North American River Otter">
@@ -32,13 +33,22 @@
         <figcaption>Sea Otter</figcaption></li>
 </ul>
 <p>
-    <button id="demobutton" onclick="myFunction()">Click here if you love otters</button>
+    <button id="demobutton" onclick="myButtonFunction()">Click here if you love otters</button>
 
     <script>
-        function myFunction(){
+        function myButtonFunction(){
             document.getElementById("demobutton").innerHTML = "Otters love you too!"
         }
     </script>
+
+<h3 onclick="ColorFunction(this, 'blue')">Click me to change my color.</h3>
+
+<script>
+function ColorFunction(element, color) {
+  element.style.color = color;
+}
+</script>
+
 </p>
 
 <h2>Other otters around the world</h2>

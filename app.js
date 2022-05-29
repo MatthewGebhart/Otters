@@ -1,5 +1,9 @@
-<script>
-    let otterLove = prompt("Do you love otters?);
-    if prompt = yes { document.write("nice to meet you, " + myName);}
-    else
-                </script>
+function otterLoveTest(){
+    let otterAnswer = prompt("Do you love otters?");
+    if (otterAnswer == "yes")
+    document.write("Welcome fellow otter lover!");    
+    if (otterAnswer != "yes")
+    document.write("That is too bad, look at how cute they are and maybe reconsider?")
+}
+
+otterLoveTest();
