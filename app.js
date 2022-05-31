@@ -10,20 +10,25 @@
 
 function otterTypeNumber(){
     let otterTypeAnswer = prompt("how many distinct species of otters exist?");
-    if (otterTypeAnswer == "13") 
-    document.write("<h3>CORRECT! There are 13 types of otters around the world</h3>"); 
-    if (otterTypeAnswer > 13)
-    document.write("<h3>Incorrect, there are less otter types than that</h3>");
-    else if (otterTypeAnswer <= 12)
-    document.write("<h3>Incorrect, there are more otter types than that</h3>");
+    if (otterTypeAnswer == "13") {
+        alert("CORRECT! There are 13 types of otters around the world"); 
+    }
+    if (otterTypeAnswer > 13) {
+       alert("Incorrect, there are less otter types than that");
+    }
+    else if (otterTypeAnswer <= 12){
+        alert("Incorrect, there are more otter types than that");
+    }
 }
 
 // otterTypeNumber();
 
 
-// function otterPics(){
-// let otterPicsAnswer = prompt("How many otter pictures do you want to see?");
-// if (otterPicsAnswer == "1")
-// // document.write(Image src="https://www.masslive.com/resizer/LPyU4yw5XvJAGj1Q6XdT8VdKs2A=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/5HPX3OOISVEYVHAITKDJOOAVGU.jpg");
-
-// }
+function otterPics(){
+let otterPicsAnswer = prompt("How many otter pictures do you want to see?");
+let pictures = ''
+for (let i = 0; i < otterPicsAnswer; i++){
+    pictures += "<img src='Otter2.jpeg'/>"
+}
+document.write(pictures)
+}
