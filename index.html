@@ -32,6 +32,11 @@
     <li class="mainimage"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/b9/e9/1e/don-t-mind-mei-m-just.jpg?w=200&h=-1&s=1" height="180" alt="Sea Otter">
         <figcaption>Sea Otter</figcaption></li>
 </ul>
+Select your favorite type of North American Otter
+<select> 
+    <option>North American River Otter</option>
+    <option>Sea Otter</option>
+    </select>
 <p>
     <button id="demobutton" onclick="myButtonFunction()">Click here if you love otters</button>
 
@@ -48,8 +53,22 @@ function ColorFunction(element, color) {
   element.style.color = color;
 }
 </script>
-
 </p>
+
+<p>
+<!-- <form>
+    How many distinct species of otters exist? 
+    <input type="text" id="typesubmit" />
+    </form> -->
+    
+    <input  type="button" onclick = "otterTypeNumber();" value="Take Otter Quiz" />
+    </p>
+
+    <p>
+    <input type="button" onclick = "otterPics();" value="Show Me Otter Pictures" />
+</p>
+   
+
 
 <h2>Other otters around the world</h2>
 
