@@ -14,12 +14,12 @@ function otterTypeNumber(){
         alert("CORRECT! There are 13 types of otters around the world"); 
     }
     if (otterTypeAnswer > 13) {
-       alert("Incorrect, there are less otter types than that");
+       alert("Incorrect, there are less otter types than that"), otterTypeNumber();
     }
-    else if (otterTypeAnswer <= 12){
-        alert("Incorrect, there are more otter types than that");
+    if (otterTypeAnswer <= 12) {
+        alert("Incorrect, there are more otter types than that"), otterTypeNumber();
     }
-}
+    }
 
 // otterTypeNumber();
 
